@@ -12,12 +12,21 @@
     "start": "npm run build && node scripts/start.js",
     "start:debug": "npm run build && node scripts/start-debug.js"
   },
-  "description": "Personal portfolio of Béla Páger — Materials Engineer and Data Analyst focused on manufacturing and quality analytics.",
-  "keywords": ["portfolio", "data-analytics", "manufacturing", "quality", "python", "sql", "power-bi"],
+  "description": "Béla Páger's personal portfolio — Data Analytics, Manufacturing Analytics and Quality Engineering.",
+  "keywords": [
+    "portfolio",
+    "data-analytics",
+    "manufacturing-analytics",
+    "quality-engineering",
+    "spc",
+    "python",
+    "sql",
+    "power-bi",
+    "streamlit"
+  ],
   "homepage": "https://github.com/Theofil87/startbootstrap-resume",
   "license": "MIT",
   "author": "Béla Páger",
-  "contributors": ["Start Bootstrap"],
   "repository": {
     "type": "git",
     "url": "https://github.com/Theofil87/startbootstrap-resume.git"
