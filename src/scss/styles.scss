@@ -17,3 +17,185 @@
 
 // Sections
 @import "./sections/resume-section.scss";
+
+
+// Modern portfolio visual layer\n
+/* ===== Béla Páger Portfolio — modern visual layer ===== */
+:root {
+  --portfolio-navy: #0f172a;
+  --portfolio-slate: #334155;
+  --portfolio-blue: #2563eb;
+  --portfolio-cyan: #06b6d4;
+  --portfolio-bg: #f4f7fb;
+  --portfolio-card: #ffffff;
+  --portfolio-border: #e2e8f0;
+}
+html { scroll-padding-top: 84px; }
+body {
+  padding-top: 72px !important;
+  padding-left: 0 !important;
+  background: var(--portfolio-bg);
+  color: #475569;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: -0.025em;
+  color: var(--portfolio-navy);
+}
+h1, .h1 { font-size: clamp(3rem, 7vw, 6rem); font-weight: 800; line-height: .95; }
+h2, .h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 2rem !important; }
+h3, .h3 { font-size: 1.35rem; font-weight: 750; }
+p.lead { font-size: 1.15rem; line-height: 1.8; max-width: 780px; }
+.subheading {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .08em;
+  color: var(--portfolio-blue);
+}
+.text-primary { color: var(--portfolio-blue) !important; }
+a { color: var(--portfolio-blue); }
+a:hover { color: #1d4ed8; }
+
+#sideNav {
+  background: rgba(15, 23, 42, .96) !important;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, .12);
+  padding: 0 1.25rem;
+  height: 72px;
+}
+#sideNav .navbar-brand { padding: 0; margin: 0; }
+#sideNav .navbar-brand .img-profile { display: none; }
+#sideNav .navbar-brand span.d-block { font-weight: 800; letter-spacing: -.02em; }
+#sideNav .navbar-collapse { justify-content: flex-end; }
+#sideNav .navbar-nav { gap: .35rem; }
+#sideNav .navbar-nav .nav-item .nav-link {
+  color: #cbd5e1;
+  font-weight: 650;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: .55rem .8rem;
+  transition: .2s ease;
+}
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #fff;
+  background: rgba(255,255,255,.09);
+}
+#sideNav .navbar-toggler { border: 0; }
+
+section.resume-section {
+  display: block;
+  width: min(1120px, calc(100% - 2rem));
+  max-width: none;
+  min-height: 0 !important;
+  margin: 1rem auto;
+  padding: 5rem clamp(1.5rem, 5vw, 5rem) !important;
+  background: var(--portfolio-card);
+  border: 1px solid var(--portfolio-border);
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, .05);
+}
+section.resume-section .resume-section-content { width: 100%; }
+
+#about {
+  min-height: calc(100vh - 90px) !important;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(37,99,235,.16), transparent 30%),
+    radial-gradient(circle at 15% 90%, rgba(6,182,212,.12), transparent 28%),
+    #fff;
+}
+#about h1 { margin-bottom: 1rem !important; }
+#about h1 .text-primary { color: var(--portfolio-blue) !important; }
+#about .subheading { font-size: 1.05rem; color: var(--portfolio-slate); margin-bottom: 1.5rem !important; }
+#about .lead { color: #64748b; }
+
+#experience .d-flex,
+#education .d-flex,
+#projects .d-flex {
+  padding: 1.5rem;
+  margin-bottom: 1rem !important;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 16px;
+  background: #fbfdff;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+#experience .d-flex:hover,
+#education .d-flex:hover,
+#projects .d-flex:hover {
+  transform: translateY(-3px);
+  border-color: #bfdbfe;
+  box-shadow: 0 12px 28px rgba(37,99,235,.08);
+}
+#experience .flex-shrink-0,
+#education .flex-shrink-0,
+#projects .flex-shrink-0 {
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding-top: .25rem;
+}
+#experience p, #education p, #projects p { line-height: 1.75; margin-bottom: 0; }
+
+#skills .subheading { margin-top: 2rem; }
+#skills .fa-ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .65rem 2rem;
+  margin-left: 0;
+  padding: 0;
+}
+#skills .fa-li { position: static; display: inline-block; width: auto; margin-right: .55rem; color: var(--portfolio-cyan); }
+#skills li { list-style: none; line-height: 1.6; }
+
+#projects h3 a { text-decoration: none; color: var(--portfolio-navy); }
+#projects h3 a:hover { color: var(--portfolio-blue); }
+#projects .subheading { color: #64748b; }
+
+.social-icons .social-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  background: var(--portfolio-navy);
+  color: #fff;
+  margin-right: .7rem;
+  box-shadow: 0 8px 20px rgba(15,23,42,.15);
+  transition: .2s ease;
+}
+.social-icons .social-icon:hover {
+  background: var(--portfolio-blue);
+  transform: translateY(-2px);
+}
+
+#contact { margin-bottom: 3rem; }
+#contact .lead { margin-bottom: 1rem; }
+hr.m-0 { display: none; }
+
+@media (min-width: 992px) {
+  #sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    flex-direction: row;
+  }
+  #sideNav .navbar-collapse { display: flex !important; }
+  #sideNav .navbar-nav { flex-direction: row; width: auto; }
+}
+@media (max-width: 991.98px) {
+  #sideNav { height: auto; min-height: 64px; }
+  body { padding-top: 64px !important; }
+  #sideNav .navbar-collapse { padding: .75rem 0; }
+  #sideNav .navbar-nav .nav-item .nav-link { padding: .7rem .8rem; }
+  section.resume-section { padding: 3rem 1.25rem !important; border-radius: 18px; }
+  #skills .fa-ul { grid-template-columns: 1fr; }
+  #about { min-height: calc(100vh - 82px) !important; }
+}
