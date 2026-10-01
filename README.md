@@ -1,40 +1,61 @@
-# Béla Páger — Personal Portfolio
+# Béla Páger — Data Analytics & Manufacturing Portfolio
 
-Personal portfolio website for **Béla Páger**, a Materials Engineer transitioning into Data Analytics, with professional experience in manufacturing, process quality and paintshop operations.
+Personal portfolio website for **Béla Páger**, a Materials Engineer transitioning into Data Analytics.
 
-## Focus
+The portfolio combines engineering and manufacturing experience with practical data analytics, statistical process control and visualization.
+
+## Professional Focus
 
 - Data Analytics
 - Manufacturing Analytics
-- Quality Engineering
+- Quality Analytics
 - Statistical Process Control (SPC)
 - Process Capability
 - Python & SQL
-- Power BI & Streamlit
+- PostgreSQL
+- Power BI & DAX
+- Streamlit
 - Manufacturing process improvement
-
-## Tech Stack
-
-- HTML / Pug
-- CSS / SCSS
-- Bootstrap 5
-- JavaScript
-- npm
-- Pug
-- Sass
 
 ## Featured Projects
 
-- [SPC Quality Monitoring](https://github.com/Theofil87/SPC-quality-monitoring)
-- [Manufacturing Production & Quality Analytics](https://github.com/Theofil87/manufacturing-production-quality-analytics)
-- [Easy Python Projects](https://github.com/Theofil87/Easy_Python_projects)
+### SPC Quality Monitoring
+Manufacturing-focused SPC project covering production data, SQL preparation, control charts and process capability analysis.
 
-## Development
+→ https://github.com/Theofil87/SPC-quality-monitoring
+
+### Manufacturing Production & Quality Analytics
+End-to-end production and quality analytics project using Python, Pandas, SQL, Power BI and Streamlit.
+
+→ https://github.com/Theofil87/manufacturing-production-quality-analytics
+
+### Easy Python Projects
+A collection of early Python projects created while developing programming fundamentals.
+
+→ https://github.com/Theofil87/Easy_Python_projects
+
+## Portfolio Technology
+
+- HTML
+- Pug
+- SCSS / CSS
+- Bootstrap 5
+- JavaScript
+- npm
+- Sass
+
+## Run Locally
 
 Install dependencies:
 
 ```bash
 npm install
+```
+
+Build the portfolio:
+
+```bash
+npm run build
 ```
 
 Start the local development server:
@@ -43,23 +64,18 @@ Start the local development server:
 npm start
 ```
 
-Build the website:
+The generated production website is placed in `dist/`.
 
-```bash
-npm run build
-```
+## About
 
-The production files are generated in the `dist/` directory.
-
-## Template
-
-The website is based on the [Start Bootstrap Resume](https://startbootstrap.com/theme/resume/) template and has been customized for my professional portfolio.
-
-The original template is released under the MIT License.
+This project started from a Bootstrap-based resume template and has been substantially customized into a personal portfolio focused on **Data Analytics, Manufacturing and Quality Engineering**.
 
 ## Author
 
 **Béla Páger**
 
-- GitHub: https://github.com/Theofil87
-- LinkedIn: https://www.linkedin.com/in/bela-pager/
+GitHub: https://github.com/Theofil87
+
+---
+
+© Béla Páger
